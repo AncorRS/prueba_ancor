@@ -51,10 +51,10 @@ export class CiudadComponent implements OnInit {
       this.latitud = this.paisTemp.coord.lat;
       this.longitud = this.paisTemp.coord.lon;
 
-      //CONVERTIMOS KELVIN A CELSIUS
-      this.temperatura = Math.round(((this.paisTemp.main.temp - 32) % 1.8));
-      this.temp_max = Math.round(((this.paisTemp.main.temp_max - 32) % 1.8));
-      this.temp_min = Math.round(((this.paisTemp.main.temp_min - 32) % 1.8));
+      //CONVERTIMOS KELVIN A CELSIUS, NO SÉ SI ES CORRECTO, HE BUSCADO LA CONVERSON EN GOOGLE
+      this.temperatura = Math.round((this.paisTemp.main.temp - 273.15));
+      this.temp_max = Math.round((this.paisTemp.main.temp_max - 273.15));
+      this.temp_min = Math.round((this.paisTemp.main.temp_min - 273.15));
 
       this.name = this.paisTemp.name;
       console.log(this.paisTemp.cod);
