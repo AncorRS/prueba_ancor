@@ -9,8 +9,8 @@ const routes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'admin/:user', component: AdminComponent},
   {path:'ciudad/:i', component: CiudadComponent},
-  {path:'', pathMatch:'full', redirectTo:'registro'},
-  {path:'**', pathMatch:'full', redirectTo:'registro'}
+  {path:'', pathMatch:'full', redirectTo:'login'},
+  {path:'**', pathMatch:'full', redirectTo:'login'}
 ];
 
 @NgModule({
