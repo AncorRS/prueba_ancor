@@ -1,0 +1,37 @@
+.body{
+    display: table;
+    width: 100%;
+ }
+
+ .form {
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+ }
+
+ .form-control{
+    width: 70%;
+ }
+
+.wellcome{
+    color:blue;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error{
+    color: red;
+}

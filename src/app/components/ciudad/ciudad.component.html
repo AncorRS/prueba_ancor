@@ -1,0 +1,21 @@
+<app-menu></app-menu>
+
+<div class="body">
+  <h1 class="wellcome">INFORMACION DE LA CIUDAD</h1>
+
+  <div class="card" style="width: 18rem;">
+      <h1 class="ciudad card-title">{{ name }}</h1>
+      <div class="card-body">
+        
+        <img src="http://openweathermap.org/img/wn/{{ cloudIcon }}@2x.png" alt="Italian Trulli">
+        <h3>{{ description }}</h3>
+        <h3>Temperatura: <span class="valores">{{ temperatura }} Cº</span></h3>
+        <h3>Temp. Máxima: <span class="valores">{{ temp_max }} Cº</span></h3>
+        <h3>Temp- Mínima: <span class="valores">{{ temp_min }} Cº</span></h3>
+        <h3>Presión: <span class="valores">{{ presion }}</span></h3>
+        <h3>Humedad: <span class="valores">{{ humedad }}%</span></h3>
+        <h3>Cordenadas: </h3>
+        <h3>Latitud: <span class="valores">{{ latitud }}</span> Longitud: <span class="valores">{{ longitud }}</span></h3>
+      </div>
+    </div>
+</div>

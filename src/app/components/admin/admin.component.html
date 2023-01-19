@@ -1,0 +1,23 @@
+<app-menu></app-menu>
+
+<div class="body">
+  <div class="centro">
+    <h1 class="wellcome">HOLA {{ user }},</h1>
+    <h1 class="wellcome">SELECCIONE DE LA LISTA DE PAISES</h1>
+    <h3>Escriba para filtrar la búsqueda</h3>
+    <p-listbox [options]="paises" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [checkbox]="false"
+      [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'250px'}" [style]="{'width':'15rem'}" filterMatchMode="startsWith">
+      <ng-template let-country pTemplate="item">
+        <div (click)="select()" class="country-item">
+          <div>{{country.name}}</div>
+        </div>
+      </ng-template>
+    </p-listbox><br><br><br>
+
+    <label class="preferidas" for=""><h1>LISTADO DE CIUDADES PREFERIDAS</h1></label>
+    <div *ngFor="let item of selectedCountries, let i=index">
+      <div class="ciudad" (click)="goCiudad(item.id)"><h1>{{ item.name }}</h1></div>
+      <button type="button" (click)="eliminar(i)" class="btn btn-primary">Eliminar</button>
+    </div>
+  </div>
+</div> 

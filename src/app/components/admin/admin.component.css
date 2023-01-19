@@ -1,0 +1,28 @@
+.body{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    place-items: center;
+  }
+
+  .centro{
+    width: 30%;
+    place-items: center;
+  }
+
+  .ciudad{
+    cursor: pointer;
+    border-color: crimson;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    padding-left: 20px;
+  }
+
+  .wellcome{
+    color:blue;
+}
+
+.preferidas{
+  color:green;
+}

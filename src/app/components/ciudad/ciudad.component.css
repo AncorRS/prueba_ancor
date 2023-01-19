@@ -1,0 +1,21 @@
+.body{
+    width: 30%;
+    margin: 0 auto;
+    place-items: center;
+  }
+
+.wellcome{
+  color:blue;
+}  
+
+.ciudad{
+  color:crimson;
+} 
+
+h3{
+  color:green;
+}
+
+.valores{
+  color:red;
+}

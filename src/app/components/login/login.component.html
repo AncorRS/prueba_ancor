@@ -1,0 +1,26 @@
+<div class="body">
+  <div class="form">
+    <h1 class="wellcome">BIENVENIDO A LA PRUEBA</h1>
+    <h3>Usuario --->  carlos</h3>
+    <h3>Clave ---> 123</h3>
+    <form [formGroup]="formul">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Usuario</span>
+          <input type="text" class="form-control" id="exampleInputEmail1" 
+          placeholder=""  formControlName="nombre" aria-describedby="emailHelp">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Clave</span>
+          <input type="text" class="form-control" id="exampleInputEmail1" 
+          placeholder=""  formControlName="clave" aria-describedby="emailHelp">
+        </div>
+        <button type="button" (click)="onSubmit()" class="btn btn-primary">Submit</button>
+    </form>   
+
+    <div>
+      <h2 class="error">{{mensajeError}}</h2>
+    </div> 
+  </div>
+</div>  
+
+
