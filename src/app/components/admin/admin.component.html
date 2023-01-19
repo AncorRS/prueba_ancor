@@ -15,6 +15,7 @@
     </p-listbox><br><br><br>
 
     <label class="preferidas" for=""><h1>LISTADO DE CIUDADES PREFERIDAS</h1></label>
+    <h3>Pinche en una ciudad para ver información detallada</h3>
     <div *ngFor="let item of selectedCountries, let i=index">
       <div class="ciudad" (click)="goCiudad(item.id)"><h1>{{ item.name }}</h1></div>
       <button type="button" (click)="eliminar(i)" class="btn btn-primary">Eliminar</button>
