@@ -23,13 +23,6 @@ export class AdminComponent implements OnInit {
     ) {}
     
   ngOnInit(): void {
-    //TRAEMOS IDENTIFICADOR DE LA URL
-    this.activatedRoute.paramMap.subscribe(params => {
-    console.log("id del pais");
-    console.log(params.get('i'));
-    this.user = params.get('user')
-  });
-
     //TRAEMOS PAISES DEL SERVICIO
     this.servicio.getJSON().subscribe(data => {
     this.paises = data;

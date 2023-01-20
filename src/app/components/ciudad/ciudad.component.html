@@ -9,9 +9,13 @@
     <h1 class="ciudad card-title">{{ name }}</h1>
   </div>  
 
-  <div class="contenido card-body">    
+  <div class="contenido card-body"> 
+
+      <!-- ICONO DEL SERVIDOR, USO DE UN SPINNER DE PRIMENG CUANDO ESTA CARGANDO EL ICONO -->
       <img *ngIf="cloudIcon" src="http://openweathermap.org/img/wn/{{ cloudIcon }}@2x.png" alt="Italian Trulli">
-      <p-progressSpinner *ngIf="!cloudIcon" [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8" fill="#EEEEEE" animationDuration=".5s"></p-progressSpinner>
+      <p-progressSpinner *ngIf="!cloudIcon" [style]="{width: '50px', height: '50px'}" 
+      styleClass="custom-spinner" strokeWidth="8" fill="#EEEEEE" animationDuration=".5s"></p-progressSpinner>
+
       <h3> <span *ngIf="cloudIcon">- {{ description }} -</span> <span *ngIf="!cloudIcon">- cargando icono del servidor -</span></h3>
       <h3><i class="fas fa-heart"></i>   Temperatura: <span class="valores">{{ temperatura }} Cº</span></h3>
       <h3><i class="fas fa-heart"></i>   Temp. Máxima: <span class="valores">{{ temp_max }} Cº</span></h3>

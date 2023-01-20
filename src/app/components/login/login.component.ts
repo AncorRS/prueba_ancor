@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
     if(this.validadorUsuario()){
-      this.router.navigate(['/admin', this.formul.value.nombre]);
+      this.router.navigate(['/admin']);
     }
   }
 

@@ -7,7 +7,7 @@ import { CiudadComponent } from "./components/ciudad/ciudad.component";
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
-  {path:'admin/:user', component: AdminComponent},
+  {path:'admin', component: AdminComponent},
   {path:'ciudad/:i', component: CiudadComponent},
   {path:'', pathMatch:'full', redirectTo:'login'},
   {path:'**', pathMatch:'full', redirectTo:'login'}
