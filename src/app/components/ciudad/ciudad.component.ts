@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CiudadComponent implements OnInit {
 
+  //VARIABLES
   paisTemp: any;
   idCiudad: any;
 
@@ -61,12 +62,11 @@ export class CiudadComponent implements OnInit {
     })
   }
 
-  primeraLetraMayuscula( cadena:any ) {
-  
+  primeraLetraMayuscula(cadena:any) {
     return cadena.toLowerCase()
-              .trim()
-              .split(' ')
-              .map(   x => x[0].toUpperCase() + x.substr(1) )
-              .join(' ');  
+      .trim()
+      .split(' ')
+      .map(x => x[0].toUpperCase() + x.substr(1))
+      .join(' ');  
   }
 }

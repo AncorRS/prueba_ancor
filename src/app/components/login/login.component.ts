@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 })
 export class LoginComponent implements OnInit {
 
+  //VARIABLES
   formul: FormGroup;
   mensajeError: string = "";
 

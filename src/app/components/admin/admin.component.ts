@@ -10,6 +10,7 @@ import { PaisesService } from 'src/app/paises.service';
 })
 export class AdminComponent implements OnInit {
 
+  //VARIABLES
   paises:any[] = [];
   user: any;
   countries: any[];
@@ -35,12 +36,6 @@ export class AdminComponent implements OnInit {
     console.log(data);
   });
     }
-
-  select(){
-    console.log("SELECCIONADO");
-    console.log(this.selectedCountries[0]);
-    console.log(this.selectedCountries.length);
-  }
 
   //ELIMINAMOS PAISES DE LA LISTA DE PREFERIDOS
   eliminar(i:any){

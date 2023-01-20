@@ -8,7 +8,7 @@
     <p-listbox [options]="paises" [(ngModel)]="selectedCountries" [metaKeySelection]="false" [checkbox]="false"
       [filter]="true" [multiple]="true" optionLabel="name" [listStyle]="{'max-height':'250px'}" [style]="{'width':'15rem'}" filterMatchMode="startsWith">
       <ng-template let-country pTemplate="item">
-        <div (click)="select()" class="country-item">
+        <div class="country-item">
           <div>{{country.name}}</div>
         </div>
       </ng-template>
