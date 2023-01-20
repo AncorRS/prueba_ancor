@@ -11,17 +11,18 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MessagesModule} from 'primeng/messages';
-import {MessageModule} from 'primeng/message';
-import {ButtonModule} from 'primeng/button';
-import {InputTextModule} from 'primeng/inputtext';
-import {RippleModule} from 'primeng/ripple';
-import {ListboxModule} from 'primeng/listbox';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { RippleModule } from 'primeng/ripple';
+import { ListboxModule } from 'primeng/listbox';
 import { CiudadComponent } from './components/ciudad/ciudad.component';
 import { MenuComponent } from './menu/menu.component';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { MenuComponent } from './menu/menu.component';
     ButtonModule,
     InputTextModule,
     RippleModule,
-    ListboxModule
+    ListboxModule,
+    ProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
