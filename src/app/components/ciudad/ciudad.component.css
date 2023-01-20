@@ -4,6 +4,7 @@
   margin: auto;
   place-items: center;
   box-shadow: 5px 10px 15px 10px chocolate;
+  border-radius: 20px;
 }
 
 .nombre{
