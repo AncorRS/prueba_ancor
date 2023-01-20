@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false,
+    "noImplicitAny": false, //PARA PODER HACER MAPS Y NO FALLE LA VARIABLE AUXILIAR
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

@@ -45,7 +45,7 @@ export class CiudadComponent implements OnInit {
       console.log(data);
       this.paisTemp = data;
       this.cloudIcon = this.paisTemp.weather[0].icon;
-      this.description = this.paisTemp.weather[0].description;
+      this.description = this.primeraLetraMayuscula(this.paisTemp.weather[0].description);
       this.humedad = this.paisTemp.main.humidity;
       this.presion = this.paisTemp.main.pressure;
       this.latitud = this.paisTemp.coord.lat;
@@ -59,5 +59,14 @@ export class CiudadComponent implements OnInit {
       this.name = this.paisTemp.name;
       console.log(this.paisTemp.cod);
     })
+  }
+
+  primeraLetraMayuscula( cadena:any ) {
+  
+    return cadena.toLowerCase()
+              .trim()
+              .split(' ')
+              .map(   x => x[0].toUpperCase() + x.substr(1) )
+              .join(' ');  
   }
 }
