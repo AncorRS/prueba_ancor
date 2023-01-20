@@ -8,6 +8,8 @@
     top       : 50%;
     position  : absolute;
     transform : translate(-50%, -50%);
+    box-shadow: 5px 5px 5px 5px rgb(175, 240, 189);
+    padding: 10px;
  }
 
  .form-control{

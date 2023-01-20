@@ -1,14 +1,33 @@
 .body{
-    width: 30%;
-    margin: 0 auto;
-    place-items: center;
-  }
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  place-items: center;
+  box-shadow: 5px 10px 15px 10px chocolate;
+}
+
+.nombre{
+  margin:auto;
+}
+
+.contenido{
+  margin:auto;
+}
+
+.titulo{
+  margin:auto;
+}
 
 .wellcome{
   color:blue;
+  display: flex;
+  justify-content: center;
 }  
 
 .ciudad{
+  display: flex;
+  justify-content: center;
+  
   color:crimson;
 } 
 
